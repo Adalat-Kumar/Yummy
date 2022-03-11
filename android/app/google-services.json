@@ -1,0 +1,44 @@
+{
+  "project_info": {
+    "project_number": "1026038522843",
+    "firebase_url": "https://auth-76ef6-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "auth-76ef6",
+    "storage_bucket": "auth-76ef6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1026038522843:android:b916517b447e45add8bdfe",
+        "android_client_info": {
+          "package_name": "yummy.food.yummy.yummy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1026038522843-kf8b3cuo11u8upo8dsdfnv99t0aoiqof.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "yummy.food.yummy.yummy",
+            "certificate_hash": "18147089bb8f615a42b7e314a3c8ea5e1c7a393e"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDie3hAx9oSIM-dTv81bKUm7HokVlnkMrQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1026038522843-k08hg95ihgp4e480occpl0e7aher4jrm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
