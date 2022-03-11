@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_typing_uninitialized_variables
 
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:yummy/API/firebase_api.dart';
@@ -99,7 +100,8 @@ class _ItemListState extends State<ItemList> {
                                           )
                                         : Hero(
                                             tag: data['foodImage'],
-                                            child: Image.network(
+                                            child: CachedNetworkImage(
+																								imageUrl:
                                               data['foodImage'],
                                               fit: BoxFit.cover,
                                             ),
