@@ -66,7 +66,7 @@ Future signOutGoogle(BuildContext context) async {
     await auth.signOut();
 
     showSnackBar(context, 'User Sign Out Successfully');
-  } catch (e, st) {
+  } catch (e) {
     showSnackBar(context, e.toString());
   }
   Navigator.pop(context);
