@@ -15,7 +15,7 @@ jobs:
     - uses: actions/setup-java@v3.0.0
       with:
         distribution: 'microsoft'
-        java-version: '11.0.4'
+        java-version: '16.0.2'
     # Setup the flutter environment.
     - name: Flutter action
       uses: subosito/flutter-action@v2.3.0
