@@ -11,23 +11,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     # Setup Java environment in order to build the Android app.
-<<<<<<< HEAD
     - uses: actions/checkout@v3
     - uses: actions/setup-java@v2
-=======
     - uses: actions/checkout@v3.0.0
     - uses: actions/setup-java@v3.0.0
->>>>>>> 724a6f5d5e854388d5df8df7eda4139f695011e9
       with:
         distribution: 'microsoft'
         java-version: '11.0.13'
     # Setup the flutter environment.
-<<<<<<< HEAD
     - uses: subosito/flutter-action@v2
-=======
     - name: Flutter action
       uses: subosito/flutter-action@v2.3.0
->>>>>>> 724a6f5d5e854388d5df8df7eda4139f695011e9
       with:
         channel: 'stable' # 'dev', 'alpha', default to: 'stable'
         # flutter-version: '1.12.x' # you can also specify exact version of flutter
@@ -38,7 +32,6 @@ jobs:
     # Build apk.
     - run: flutter build apk --target-platform=android-arm64
     # Upload generated apk to the artifacts.
-<<<<<<< HEAD
     - name: Upload files to a GitHub release
       uses: svenstaro/upload-release-action@2.2.1
       with:
@@ -48,9 +41,7 @@ jobs:
         tag: ${{ github.ref }}
         overwrite: true
         body: "Output apk"
-=======
     - uses: actions/upload-artifact@v3.0.0
       with:
         name: release
         path: build/app/outputs/apk/release/
->>>>>>> 724a6f5d5e854388d5df8df7eda4139f695011e9
