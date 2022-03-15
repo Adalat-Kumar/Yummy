@@ -2,26 +2,21 @@ name: Flutter release
 
 on: [push]
 
- jobs:
+jobs:
    build:
      name: Test, build and release
-
-      runs-on: ubuntu-latest
-
-      steps:
+     runs-on: ubuntu-latest
+     steps:
         - name: Checkout
           uses: actions/checkout@v1
-
         - name: Setup Java
           uses: actions/setup-java@v1
           with:
             java-version: '12.x'
-
         - name: Setup Flutter
           uses: subosito/flutter-action@v1
           with:
             channel: stable
-
         - name: Flutter version
           run: flutter --version
 
