@@ -1,12 +1,10 @@
 name: Flutter release
 
-on:
-  release:
-    types: [published]
+on: [push]
 
-  jobs:
-    release:
-      name: Test, build and release
+ jobs:
+   build:
+     name: Test, build and release
 
       runs-on: ubuntu-latest
 
@@ -42,9 +40,6 @@ on:
 
         - name: Run analyzer
           run: flutter analyze
-
-        - name: Run tests
-          run: flutter test
 
         - name: Download Android keystore
           id: android_keystore
