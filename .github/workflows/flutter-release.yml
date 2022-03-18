@@ -50,7 +50,7 @@ jobs:
         - name: Build Android APK
           run: flutter build apk --target-platform=android-arm64
         - name: Upload To Artifacts
-          uses: actions/upload-artifact@v2
+          uses: actions/upload-artifact@6673cd052c4cd6fcf4b4e6e60ea986c889389535
           with:
             name: Yummy
             path: build/app/outputs/flutter-apk/app-release.apk
